@@ -1,9 +1,10 @@
 //your JS code here. If required.
 function getBrowserDetail (){
-	let ua = navigator.userAgent;
+	let browserName = navigator.appName;
+	let version = navigator.appVersion;
 	// console.log('You are using', ua);
 	let displayDetail = document.body;
-	displayDetail.innerHTML = 'You are using '+ua;
+	displayDetail.innerHTML = "You are using " + browserName + " version " + version;
 	// console.log(displayDetail);
 }
 
